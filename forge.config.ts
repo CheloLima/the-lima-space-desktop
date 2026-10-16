@@ -13,10 +13,10 @@ import path from "node:path";
 // import { globSync } from "node:fs";
 
 const STRINGS = {
-  author: "Revolt Platforms LTD",
-  name: "Stoat",
-  execName: "stoat-desktop",
-  description: "Open source user-first chat platform.",
+  author: "The Lima Space",
+  name: "The Lima Space",
+  execName: "The-Lima-Space",
+  description: "The Lima Space Desktop Client",
 };
 
 const ASSET_DIR = "assets/desktop";
@@ -29,18 +29,18 @@ const makers: ForgeConfig["makers"] = [
     name: STRINGS.name,
     authors: STRINGS.author,
     // todo: hoist this
-    iconUrl: `https://stoat.chat/app/assets/icon-DUSNE-Pb.ico`,
+    iconUrl: `https://thelima.space/assets/favicon.ico`,
     // todo: loadingGif
     setupIcon: `${ASSET_DIR}/icon.ico`,
     description: STRINGS.description,
     exe: `${STRINGS.execName}.exe`,
     setupExe: `${STRINGS.execName}-setup.exe`,
-    copyright: "Copyright (C) 2025 Revolt Platforms LTD",
+    copyright: "Copyright (C) The Lima Space",
   }),
   new MakerZIP({}),
   new MakerFlatpak({
     options: {
-      id: "chat.stoat.StoatDesktop",
+      id: "space.thelima.desktop",
       description: STRINGS.description,
       productName: STRINGS.name,
       productDescription: STRINGS.description,
